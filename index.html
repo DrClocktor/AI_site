@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Hjelmblink-LLM</title>
+</head>
+<body>
+<header>
+    <button id="starWarsBtn"> Star Wars Mode</button>
+    <button id="normalModeBtn"> Normal Mode</button>
+    <h1> What can I help you with today? </h1>
+
+</header>
+
+
+<section id="normalMode">
+    <div class="normalDiv">
+        <form class="inputForm">
+            <lable for="input"> Type here</lable>
+            <textarea type="text" id="input" name="inputBox" placeholder="Hvad kan jeg hjælpe dig med i dag? 😊"> </textarea>
+            <input type="button" value="Click Me" id="inputButton">
+        </form>
+
+        <div id="responseBox">
+            <p class=responseText></p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Star Wars -->
+<section id="starWarsMode">
+    <div class="leftContainer">
+        <form class="inputFormSW">
+            <lable for="input"> Type here</lable>
+            <textarea type="text" id="inputSW" name="inputBox"> </textarea>
+            <input type="button" value="Click Me" id="inputButtonSW">
+        </form>
+
+        <div id="responseBoxSW">
+            <p class=responseTextSW></p>
+        </div>
+    </div>
+
+    <div class="rightContainer">
+        <form class="converterForm">
+            <lable for="input"> Translator</lable>
+            <textarea type="text" id="converter" name="inputBox"> </textarea>
+            <input type="button" value="Click Me" id="convertButton">
+        </form>
+
+        <div id="convertedTextBox">
+            <p class="converterResponse"></p>
+        </div>
+    </div>
+</section>
+
+<div id="choices">
+    <button class="toDoBtn"> To Do and Routines</button>
+    <button class="foodBtn"> Food ideas</button>
+</div>
+
+</body>
+<script src="main.js"></script>
+</html>
